@@ -1,0 +1,6 @@
+demo_eclic
+*.o
+*.i
+*.s
+*.dump
+*.verilog

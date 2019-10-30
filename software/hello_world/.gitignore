@@ -1,0 +1,7 @@
+hello_world
+*.o
+*.i
+*.s
+*.dump
+*.verilog
+

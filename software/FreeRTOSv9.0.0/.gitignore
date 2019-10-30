@@ -1,0 +1,7 @@
+FreeRTOSv9.0.0
+*.o
+*.i
+*.s
+*.dump
+*.verilog
+

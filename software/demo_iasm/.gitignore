@@ -1,0 +1,8 @@
+demo_iasm
+*.o
+*.i
+*.s
+*.dump
+*.verilog
+*.dump
+

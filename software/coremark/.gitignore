@@ -1,0 +1,8 @@
+/
+
+coremark
+*.o
+*.i
+*.s
+*.dump
+*.verilog
