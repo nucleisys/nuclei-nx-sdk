@@ -10,10 +10,10 @@
 #endif
 
 
-extern void halt(int32_t,int32_t);
-extern void syscall_handler(int32_t sp[]);
-extern int32_t trap_handler(int32_t mcause,int32_t mepc,int32_t sp[],int32_t arg1);
-extern int32_t timer_irq_handler(int32_t mcause,int32_t mepc,int32_t sp[]);
+extern void halt(int64_t,int64_t);
+extern void syscall_handler(int64_t sp[]);
+extern int64_t trap_handler(int64_t mcause,int64_t mepc,int64_t sp[],int64_t arg1);
+extern int64_t timer_irq_handler(int64_t mcause,int64_t mepc,int64_t sp[]);
 
 
 /*-----------------------------------------------------------*/

@@ -15,16 +15,16 @@
 
 
 
-void syscall_handler(int32_t sp[])
+void syscall_handler(int64_t sp[])
 {
-	extern void task_switch(int32_t sp[]);
+	extern void task_switch(int64_t sp[]);
 	task_switch(sp);
 
 }
 
-void time_handler(int32_t sp[])
+void time_handler(int64_t sp[])
 {
-extern void task_switch(int32_t sp[]);
+extern void task_switch(int64_t sp[]);
 
   static uint64_t then = 0;
  
@@ -47,7 +47,7 @@ extern void task_switch(int32_t sp[]);
 }
 
 
-int32_t trap_handler(int32_t mcause,int32_t mepc,int32_t sp[],int32_t arg1)
+int64_t trap_handler(int64_t mcause,int64_t mepc,int64_t sp[],int64_t arg1)
 {
 		switch(mcause&0X00000fff)
 		{
@@ -109,13 +109,13 @@ void TickSetup()	{
 }
 
 
-int32_t timer_irq_handler(int32_t mcause,int32_t mepc,int32_t sp[])
+int64_t timer_irq_handler(int64_t mcause,int64_t mepc,int64_t sp[])
 {
 	sp[31]=mepc;
 	time_handler(sp);
 }
 
-void halt(int32_t mcause,int32_t mepc)
+void halt(int64_t mcause,int64_t mepc)
 {
 	extern void exit(int);
 	disable_global_int();
