@@ -1,0 +1,5 @@
+ucosii
+*.o
+*.verilog
+*.dump
+
