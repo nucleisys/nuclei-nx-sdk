@@ -211,7 +211,7 @@
 
 
 #define SAVE_FPU_REG_F         \
-    uint32_t f0,f1,f2,f3,f4,f5,f6,f7,f10,f11,f12,f13,f14,f15,f16,f17,f28,f29,f30,f31;   \
+    uint64_t f0,f1,f2,f3,f4,f5,f6,f7,f10,f11,f12,f13,f14,f15,f16,f17,f28,f29,f30,f31;   \
     f0 = read_fpu(f0);          \
     f1 = read_fpu(f1);          \
     f2 = read_fpu(f2);          \
