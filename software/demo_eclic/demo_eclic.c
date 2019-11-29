@@ -130,7 +130,7 @@ const char * printf_instructions_msg= " \
 \n\
 This is printf function printed:  \n\
 \n\
-             !! Here We Go, Nuclei-N200 !! \n\
+             !! Here We Go, Nuclei-NX !! \n\
 \n\
      ######    ###    #####   #####          #     #\n\
      #     #    #    #     # #     #         #     #\n\
