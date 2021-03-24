@@ -1,5 +1,2 @@
-# nuclei-nx-sdk
-The purpose of this repo is to make it used by the commercial Nuclei NX-class processor core series. 
-
-support below nucleisys core:
-* nx600
+# Important Note
+## This project will no longer be updated and maintained, please change to https://github.com/Nuclei-Software/nuclei-sdk
